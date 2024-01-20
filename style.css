@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins/Poppins-Regular.ttf);
+}
+
+/* For all class we can use (* sign) */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins';
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 90%;
+}
+
+/* navBar styling starts
+navBar should always stay in top and left sided 
+*/
+
+nav{
+    height: 80px;
+    background-color: #3D155E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    place-items: center;
+
+
+    
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    font-size: 20px;
+    color:rgb(246, 241, 241);
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 30%;
+   
+}
+
+/* We can't just change the list , beacuse it is on the a tag, under li,
+and li is under nav-links */
+.nav-links li a{
+    color: rgb(246, 241, 241);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+ .nav-links li a:hover{
+    color: #d99dd6;
+
+}
+
+.nav-links li a:active{
+    color: rgb(67, 130, 169);
+}
